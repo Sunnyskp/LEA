@@ -1,5 +1,4 @@
 /********************** HIGHEST LEVEL STYLING *****************/
-
 body {
   background-color: #000000;
   color: #ffffff;
@@ -88,6 +87,8 @@ img {
 .label-img {
   padding: 1rem;
   border-radius: 2rem;
+  box-sizing: border-box;
+
 }
 
 .main-menu {
@@ -156,8 +157,9 @@ img {
   border-radius: 1rem;
   place-items: center;
   height: 100%;
-  display: flex;
+  display: cover;
   margin: 0 1rem;
+  box-sizing: border-box;
 }
 
 .txt-area1 {
