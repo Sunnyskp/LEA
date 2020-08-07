@@ -1,0 +1,361 @@
+/********************** HIGHEST LEVEL STYLING *****************/
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  width: 98%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+header {
+  background-image: url("../img/banner.png");
+  background-position: center;
+  border-radius: 0.5rem;
+}
+
+footer {
+  background-image: url("../img/banner.png");
+  background-position: bottom;
+  display: grid;
+  grid-template-columns: 3fr 6fr 0.75fr 0.75fr 0.75fr 0.75fr 0.75fr;
+  color: #ffffff;
+  text-align: left;
+  border-radius: 0.5rem;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+h1 {
+  background-image: url("../img/banner.png");
+  background-position: bottom;
+  font-size: 2rem;
+  color: #ffffff;
+  line-height: 3rem;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin: 0.75rem 0;
+  padding: 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 1rem;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.25rem;
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+img {
+  border-radius: 1rem;
+}
+
+/******************** CONTENT CLASSES ***********************/
+
+.content-format {
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  text-align: justify;
+  align-items: center;
+  margin: auto;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.label-img {
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.main-menu {
+  background-color: #2310e0;
+  min-width: 8em;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.menu-icon {
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  padding: 0.5rem;
+
+}
+
+.menu-bar {
+  font-size: 1.5 rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.menu-item {
+  text-align: center;
+  line-height: 2.5rem;
+  background-color: #b3adad;
+  min-width: 8em;
+  display: block;
+  margin: 0 0.5rem;
+  font-family: 'Lobster Two', cursive;
+}
+
+.footer-links {
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  align-items: center;
+  padding: 1rem;
+  text-decoration: underline;
+}
+
+.sm-logo {
+  max-width: 80%;
+  width: auto;
+  height: auto;
+}
+
+/************************** SPECIFIC CONTENT CLASSES *************************/
+
+.logo {
+  text-align: center;
+  max-width: 25em;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+
+.label-type-img {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  place-items: center;
+  height: 100%;
+  display: flex;
+  margin: 0 1rem;
+}
+
+.txt-area1 {
+  min-width: 15rem;
+  height: 1.25rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+.txt-area2 {
+  min-width: 15rem;
+  min-height: 10rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+.contact-address-style {
+  font-size: 2rem;
+  color: #ffffff;
+  line-height: 3 rem;
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.submit {
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 3rem;
+  max-width: 15rem;
+  display: block;
+  width: 100%;
+  font-family: 'Lobster Two', cursive;
+  font-weight: bold;
+  background-color: #2310e0;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.copyright {
+  font-size: 1rem;
+}
+
+/**************************  RESPONSIVE MEDIA QUERIES(Max Width)  **********************/
+
+@media screen and (max-width:499px) {
+
+  .sm-logo {
+    max-width: 50%;
+    width: auto;
+    height: auto;
+  }
+
+  .content-format {
+    font-size: 0.80rem;
+  }
+
+  p {
+    font-size: 0.80rem;
+  }
+
+  #copyright {
+    font-size: 0.5rem;
+    font-stretch: condensed;
+  }
+
+}
+
+@media screen and (max-width:699px) {
+
+  .grid-box-1 {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    place-items: center;
+  }
+
+  .content-format {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  footer {
+    grid-template-columns: 5fr 5fr;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    text-align: left;
+  }
+
+ .sm-logo {
+    display: none;
+  } 
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  .menu-bar {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  .menu-icon-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+  .menu-icon-desktop {
+    width: 5rem;
+    height: auto;
+    text-align: center;
+    place-items: center;
+    padding: 0 0.25rem;
+  }
+
+  .content-format {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .contact-address-style {
+    font-size: 1.25rem;
+  }
+
+  .footer-links {
+    font-size: 0.75rem;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    place-items: center;
+    padding: 1rem;
+    text-decoration: underline;
+  }
+
+}
+
+/**************************  RESPONSIVE MEDIA QUERIES(Min-Width)  **********************/
+
+@media screen and (min-width:700px) {
+  .grid-box-2 {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    place-items: center;
+  }
+
+}
+
+@media screen and (min-width:1001px) {
+
+  .grid-box-3 {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    place-items: center;
+  }
+
+  .menu-item {
+    display: inline-block;
+    background-color: #2310e0;
+    padding-top: 0.5rem;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-icon-desktop {
+    width: 1.75rem;
+    height: auto;
+    text-align: end;
+    place-items: end;
+    padding: 0 0.25rem;
+  }
+
+  .menu-bar {
+    background-color: #2310e0;
+  }
+
+}
