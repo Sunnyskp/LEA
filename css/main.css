@@ -233,6 +233,10 @@ img {
 
 @media screen and (max-width:699px) {
 
+  footer{
+    grid-template-columns: 3fr 6fr 0.75fr;
+  }
+
   .grid-box-1 {
     display: inline-grid;
     grid-template-columns: 1fr;
@@ -241,25 +245,27 @@ img {
   }
 
   .content-format {
-    font-size: 1rem;
-    padding: 0 1rem;
+    font-size: 0.5rem;
+    align-self: center;
+   padding: 0 1rem;
   }
+
+
 
   p {
-    font-size: 1rem;
+    font-size: 1em;
   }
 
-  footer {
-    grid-template-columns: 5fr 5fr;
-  }
 
   .copyright {
-    font-size: 0.75rem;
-    text-align: left;
+    font-size: 0.5rem;
+    text-align: center;
   }
 
  .sm-logo {
-    display: none;
+    display: inline;
+    max-width: 1em;
+    margin: 1em;
   } 
 
 }
