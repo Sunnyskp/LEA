@@ -138,7 +138,7 @@ img {
 }
 
 .sm-logo {
-  max-width: 80%;
+  max-width: 16px;;
   width: auto;
   height: auto;
 }
@@ -211,7 +211,7 @@ img {
 @media screen and (max-width:499px) {
 
   .sm-logo {
-    max-width: 50%;
+    max-width: 6px;;
     width: auto;
     height: auto;
   }
@@ -264,7 +264,7 @@ img {
 
  .sm-logo {
     display: inline;
-    max-width: 1em;
+    max-width: 6px;
     margin: 1em;
   } 
 
